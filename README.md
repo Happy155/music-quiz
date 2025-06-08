@@ -52,6 +52,18 @@ Do uruchomienia projektu wymagane jest posiadanie zainstalowanego Dockera oraz D
    ```
 Po wykonaniu powyższych kroków strona powinna już działać i być dostępna pod adresem http://localhost:8000.
 
+### Po uruchomieniu (zalecane)
+
+1. Wejdź w tryb exec kontenera ze stroną
+   ```sh
+   docker exec -it music-quiz-web-1 /bin/bash
+   ```
+2. Stwórz konto administratora
+   ```sh
+   python manage.py createsuperuser
+   ```
+Wykonanie powyższych kroków sprawi, że utworzone zostanie konto administratora, które umożliwi zarządzanie stroną poprzez panel administracyjny.
+
 [django]: https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green
 [django-url]: https://www.djangoproject.com/
 [bootstrap]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
